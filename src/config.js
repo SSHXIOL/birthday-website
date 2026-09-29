@@ -19,7 +19,7 @@ export const AUDIO_SRC = "/music/bg-music.mp3";
 export const APP_CONFIG = {
   girlfriendName: "Abby",
   age: 17,
-  musicTitle: "Golden Hour - Acoustic 🎵",
+  musicTitle: "Iris - Goo Goo Dolls 🎵",
   coupleSince: "2024", // Years together
   heroSubtitle: '"3 birthdays together, 2 years in love, and a lifetime of adventures ahead."',
 };
@@ -95,7 +95,7 @@ export const PHOTO_LIST = [
     image: "/images/photo1.jpg",
     fallbackImage: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80",
     caption: "The day my heart chose you ✨",
-    date: "September 30th",
+    date: "September 7th",
     note: "I still remember how your eyes sparkled when you laughed that day. My favorite sight in the whole universe.",
     rotation: "-3deg"
   },
@@ -132,15 +132,54 @@ export const PHOTO_LIST = [
 
 // 💖 7. HEART COLLAGE THUMBNAILS
 export const HEART_COLLAGE_PHOTOS = [
-  { id: 'h1', src: '/images/photo1.jpg', label: 'Magic' },
-  { id: 'h2', src: '/images/photo2.jpg', label: 'Warmth' },
-  { id: 'h3', src: '/images/photo3.jpg', label: 'Forever' },
-  { id: 'h4', src: '/images/photo1.jpg', label: 'Pretty' },
-  { id: 'h5', src: '/images/photo2.jpg', label: 'Smiles' },
-  { id: 'h6', src: '/images/photo3.jpg', label: 'Sweetheart' },
-  { id: 'h7', src: '/images/photo1.jpg', label: 'Love' },
-  { id: 'h8', src: '/images/photo2.jpg', label: 'Cherish' },
-  { id: 'h9', src: '/images/photo3.jpg', label: 'Joy' },
+  {
+    id: 'h1',
+    src: '/images/heart1.jpg',
+    label: 'Playful Smiles',
+    message: 'Your silly, cheeky expressions that never fail to brighten my entire day.'
+  },
+  {
+    id: 'h2',
+    src: '/images/heart7.jpg',
+    label: 'Adorably Cute',
+    message: 'That sweet little wink with your glasses that completely melts my heart every single time.'
+  },
+  {
+    id: 'h3',
+    src: '/images/heart4.jpg',
+    label: 'Prettiest Girl',
+    message: 'The effortless beauty that took my breath away the very first moment I saw you.'
+  },
+  {
+    id: 'h4',
+    src: '/images/heart2.jpg',
+    label: 'My Whole Heart',
+    message: 'The way you make a heart with your hands and look at me with so much genuine love.'
+  },
+  {
+    id: 'h5',
+    src: '/images/heart5.jpg',
+    label: 'My Princess',
+    message: 'Standing radiant and elegant in your dress—you are the most breathtaking person in every room.'
+  },
+  {
+    id: 'h6',
+    src: '/images/heart3.jpg',
+    label: 'Late Night Comfort',
+    message: 'Our sleepy, quiet FaceTime calls where just having you on my screen brings pure peace.'
+  },
+  {
+    id: 'h7',
+    src: '/images/heart6.jpg',
+    label: 'Everyday Warmth',
+    message: 'The simple, ordinary quiet moments together that mean the absolute world to me.'
+  },
+  {
+    id: 'h8',
+    src: '/images/heart8.jpg',
+    label: 'Endless Horizons',
+    message: 'No matter how vast and beautiful the world is, my favorite view will always be you.'
+  },
 ];
 
 // 🏺 8. REASONS I'M GRATEFUL FOR YOU (JAR OF REASONS)
