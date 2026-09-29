@@ -3,6 +3,9 @@
 // Everything you see on the website can be customized right here in this file!
 // =========================================================================
 
+// 🌐 0. WEBSITE DEPLOYMENT URL
+export const WEBSITE_URL = "https://sshxiol.github.io/birthday-website/";
+
 // 🔐 1. SECRET UNLOCK PIN
 // Change this to any 4-digit secret date (e.g. 3009 for September 30th)
 export const PIN_CODE = "3009";

@@ -11,6 +11,7 @@ import LetterSection from './components/LetterSection';
 import PhotoGallery from './components/PhotoGallery';
 import GratefulJar from './components/GratefulJar';
 import FloatingAudioWidget from './components/FloatingAudioWidget';
+import HeartQrModal from './components/HeartQrModal';
 import { APP_CONFIG } from './config';
 
 export default function App() {
@@ -168,6 +169,10 @@ export default function App() {
                       <RefreshCw className="w-3.5 h-3.5" />
                       <span>Replay</span>
                     </button>
+                  </div>
+
+                  <div className="mt-4 pt-4 border-t border-pink-400/20 w-full flex justify-center">
+                    <HeartQrModal />
                   </div>
                 </div>
 
