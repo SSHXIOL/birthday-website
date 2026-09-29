@@ -51,8 +51,8 @@ export const BOUQUET_FLOWERS = [
     accent: "#ff4d6d",
     border: "border-rose-400/40",
     bgGradient: "from-rose-500/20 to-pink-900/30",
-    quote: "You are the finest rose that ever bloomed — full of love and unmatched beauty.",
-    tagline: "Elegance & Endless Love"
+    quote: "You are my only flower in the my garden.",
+    tagline: "My only Love"
   },
   {
     id: "sunflower",
@@ -61,7 +61,7 @@ export const BOUQUET_FLOWERS = [
     accent: "#ffb703",
     border: "border-amber-400/40",
     bgGradient: "from-amber-500/20 to-yellow-900/30",
-    quote: "Like a sunflower, you always turn toward the light and bring warmth to everyone around you.",
+    quote: "Like a sunflower, you always shine the world for me(cringe but it's the truth :( )",
     tagline: "Warmth & My Sunshine"
   },
   {
@@ -71,7 +71,7 @@ export const BOUQUET_FLOWERS = [
     accent: "#ff85a1",
     border: "border-pink-400/40",
     bgGradient: "from-pink-500/20 to-purple-900/30",
-    quote: "Gentle, radiant, and bringing endless joy wherever you go.",
+    quote: "The most care from a person I've ever received.",
     tagline: "Grace & Gentle Tenderness"
   },
   {
