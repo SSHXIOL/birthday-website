@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Mail, MailOpen, Heart, Sparkles, Feather } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { LETTER_CONTENT } from '../config';
 
 export default function LetterSection() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,12 +60,12 @@ export default function LetterSection() {
             <div className="w-20 h-20 rounded-full bg-gradient-to-tr from-rose-600 via-pink-500 to-rose-400 flex items-center justify-center shadow-lg border-2 border-pink-200/60 mb-5 relative">
               <Mail className="w-9 h-9 text-white" />
               <div className="absolute -bottom-1 -right-1 w-6 h-6 rounded-full bg-amber-400/90 text-rose-950 flex items-center justify-center text-[10px] font-bold shadow-md">
-                17
+                {LETTER_CONTENT.envelopeBadge}
               </div>
             </div>
 
             <h3 className="font-serif text-2xl text-white font-medium mb-1">
-              To My Sweetest Abby
+              {LETTER_CONTENT.envelopeTitle}
             </h3>
             <p className="text-xs text-pink-200/80 font-light mb-6">
               Tap the wax seal to unfold your letter 💌
@@ -111,27 +112,21 @@ export default function LetterSection() {
               {/* Romantic Letter Content */}
               <div className="space-y-4 font-serif text-rose-100 text-base leading-relaxed tracking-wide selection:bg-pink-500/30">
                 <p className="text-2xl font-serif font-semibold text-white tracking-normal drop-shadow-sm">
-                  Happy Birthday,
+                  {LETTER_CONTENT.greeting}
                 </p>
 
-                <p className="text-blush-200 text-[15px] sm:text-base leading-relaxed">
-                  my sweet sweet cutie pretty gal of a girlfriend. You’re 17 now, that’s an age where things start to get serious, I know you hate change and the consequences that comes with it but I wholeheartedly hope that you don’t forget that the people around you won’t stop loving you, and that includes me, I honestly ran out of words to describe how much you mean to me and how heavily you impact my life and how I look at life, and being with you for 2 years honestly feels unreal. Looking back at everything we went through, all the ups and down we went through, always one thing has stayed consistent about it, my love for you. I know that I still need a lot of improving when it comes to how I express my love for you and how I handle situations involving you being unhappy, but I solemnly promise to treat you care and love. And being with you in your birthday for 3 years honestly feels really special and intimate to me, because watching you grow into the person you are today has been one of the greatest privileges of my life.
-                </p>
-
-                <p className="text-blush-200 text-[15px] sm:text-base leading-relaxed">
-                  I know the future can feel overwhelming sometimes, and stepping into this next chapter comes with its own weight. But whenever the world feels like it’s moving a little too fast, I want you to remember that you don't have to carry it all on your own. I’m right here, in your corner, through every twist, every turn, and every challenge that comes our way. No matter how much things change around us, my place next to you isn’t going anywhere.
-                </p>
-
-                <p className="text-blush-200 text-[15px] sm:text-base leading-relaxed">
-                  Thank you for being my comfort, my peace, and the person who brings so much genuine warmth into my days. Thank you for your patience with me, for every quiet moment we share, and for letting me love you. You deserve all the happiness, gentleness, and peace this world can offer—not just today, but every single day.
-                </p>
+                {LETTER_CONTENT.paragraphs.map((para, pIdx) => (
+                  <p key={pIdx} className="text-blush-200 text-[15px] sm:text-base leading-relaxed">
+                    {para}
+                  </p>
+                ))}
 
                 <div className="pt-4 border-t border-pink-400/20 text-right">
                   <p className="text-lg font-serif italic text-white font-medium">
-                    Happy 17th birthday, my wifey❤️.
+                    {LETTER_CONTENT.closingGreeting}
                   </p>
                   <p className="text-2xl font-handwriting text-pink-300 mt-1">
-                    Yours always and forever
+                    {LETTER_CONTENT.signature}
                   </p>
                 </div>
               </div>

@@ -1,17 +1,44 @@
-// Configuration for Abby's 17th Birthday App
-// You can easily change PIN code, music, photos, and messages here!
+// =========================================================================
+// 💖 ABBY'S 17th BIRTHDAY APP — CENTRAL CONFIGURATION FILE
+// Everything you see on the website can be customized right here in this file!
+// =========================================================================
 
-export const PIN_CODE = "1204"; // Secret date (e.g., December 4th)
-export const AUDIO_SRC = "/music/bg-music.mp3"; // Background music path
+// 🔐 1. SECRET UNLOCK PIN
+// Change this to any 4-digit secret date (e.g. 1204 for Dec 4th)
+export const PIN_CODE = "1204";
 
+// 🎵 2. BACKGROUND MUSIC
+// You can drop an MP3 file into `public/music/bg-music.mp3` or change this path
+export const AUDIO_SRC = "/music/bg-music.mp3";
+
+// 👑 3. GENERAL DETAILS
 export const APP_CONFIG = {
   girlfriendName: "Abby",
   age: 17,
   musicTitle: "Golden Hour - Acoustic 🎵",
-  coupleSince: "2024", // 2 years together
+  coupleSince: "2024", // Years together
+  heroSubtitle: '"3 birthdays together, 2 years in love, and a lifetime of adventures ahead."',
 };
 
-// Flower bouquet messages
+// 💌 4. THE 17th BIRTHDAY LETTER
+// Edit your letter paragraphs, greeting, and signature below:
+export const LETTER_CONTENT = {
+  envelopeTitle: "To My Sweetest Abby",
+  envelopeBadge: "17",
+  greeting: "Happy Birthday,",
+  paragraphs: [
+    "my sweet sweet cutie pretty gal of a girlfriend. You’re 17 now, that’s an age where things start to get serious, I know you hate change and the consequences that comes with it but I wholeheartedly hope that you don’t forget that the people around you won’t stop loving you, and that includes me, I honestly ran out of words to describe how much you mean to me and how heavily you impact my life and how I look at life, and being with you for 2 years honestly feels unreal. Looking back at everything we went through, all the ups and down we went through, always one thing has stayed consistent about it, my love for you. I know that I still need a lot of improving when it comes to how I express my love for you and how I handle situations involving you being unhappy, but I solemnly promise to treat you care and love. And being with you in your birthday for 3 years honestly feels really special and intimate to me, because watching you grow into the person you are today has been one of the greatest privileges of my life.",
+    
+    "I know the future can feel overwhelming sometimes, and stepping into this next chapter comes with its own weight. But whenever the world feels like it’s moving a little too fast, I want you to remember that you don't have to carry it all on your own. I’m right here, in your corner, through every twist, every turn, and every challenge that comes our way. No matter how much things change around us, my place next to you isn’t going anywhere.",
+    
+    "Thank you for being my comfort, my peace, and the person who brings so much genuine warmth into my days. Thank you for your patience with me, for every quiet moment we share, and for letting me love you. You deserve all the happiness, gentleness, and peace this world can offer—not just today, but every single day."
+  ],
+  closingGreeting: "Happy 17th birthday, my wifey❤️.",
+  signature: "Yours always and forever"
+};
+
+// 🌸 5. FLOWER BOUQUET NOTES
+// Tapping each flower displays these tailored love messages:
 export const BOUQUET_FLOWERS = [
   {
     id: "rose",
@@ -55,13 +82,14 @@ export const BOUQUET_FLOWERS = [
   }
 ];
 
-// Polaroid Photos & Backside Notes
-// If local files like /images/photo1.jpg are not yet present, romantic aesthetic fallbacks are provided
+// 📸 6. POLAROID PHOTOS & REVERSE NOTES
+// Tip: Drop your photos into `public/images/photo1.jpg`, `photo2.jpg`, etc.
+// Or replace the `image` URLs with your own direct links!
 export const PHOTO_LIST = [
   {
     id: 1,
-    image: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80",
-    fallbackImage: "/images/photo1.jpg",
+    image: "/images/photo1.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80",
     caption: "The day my heart chose you ✨",
     date: "Dec 2024",
     note: "I still remember how your eyes sparkled when you laughed that day. My favorite sight in the whole universe.",
@@ -69,8 +97,8 @@ export const PHOTO_LIST = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=700&q=80",
-    fallbackImage: "/images/photo2.jpg",
+    image: "/images/photo2.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=700&q=80",
     caption: "Your smile is my safe haven 🧸",
     date: "Summer Days",
     note: "Every time you hold my hand, everything else in this chaotic world goes completely silent.",
@@ -78,8 +106,8 @@ export const PHOTO_LIST = [
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=700&q=80",
-    fallbackImage: "/images/photo3.jpg",
+    image: "/images/photo3.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=700&q=80",
     caption: "3 Birthdays together & forever 💕",
     date: "Our Precious Moments",
     note: "Watching you grow into the incredible, gentle, strong young woman you are today is my greatest pride.",
@@ -87,8 +115,8 @@ export const PHOTO_LIST = [
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80",
-    fallbackImage: "/images/photo4.jpg",
+    image: "/images/photo4.jpg",
+    fallbackImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80",
     caption: "My prettiest cutie gal 🌷",
     date: "Every Single Day",
     note: "No words in any language will ever be enough to describe how gorgeous you are to me inside and out.",
@@ -96,7 +124,7 @@ export const PHOTO_LIST = [
   }
 ];
 
-// Heart collage thumbnails (arranged in heart shape)
+// 💖 7. HEART COLLAGE THUMBNAILS
 export const HEART_COLLAGE_PHOTOS = [
   { id: 'h1', src: 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=300&q=80', label: 'Magic' },
   { id: 'h2', src: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=300&q=80', label: 'Warmth' },
@@ -109,7 +137,8 @@ export const HEART_COLLAGE_PHOTOS = [
   { id: 'h9', src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80', label: 'Joy' },
 ];
 
-// Reasons I'm Grateful For You
+// 🏺 8. REASONS I'M GRATEFUL FOR YOU (JAR OF REASONS)
+// Add, remove, or edit any reasons here:
 export const GRATEFUL_REASONS = [
   "The adorable way your nose crinkles when you laugh genuinely at something silly.",
   "How you make even the most boring, ordinary days feel like a movie scene.",
