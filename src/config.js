@@ -154,13 +154,13 @@ export const HEART_COLLAGE_PHOTOS = [
     id: 'h4',
     src: '/images/heart2.jpg',
     label: 'My Whole Heart',
-    message: 'The way you make a heart with your hands and look at me with so much genuine love.'
+    message: 'The way you make a heart with your hands and look at me with that cute smile of yours really means a lot :).'
   },
   {
     id: 'h5',
     src: '/images/heart5.jpg',
     label: 'My Princess',
-    message: 'Standing radiant and elegant in your dress—you are the most breathtaking person in every room.'
+    message: 'Standing radiant and elegant in your dressyou are the most breathtaking person in every room you walk into.'
   },
   {
     id: 'h6',
@@ -172,7 +172,7 @@ export const HEART_COLLAGE_PHOTOS = [
     id: 'h7',
     src: '/images/heart6.jpg',
     label: 'Everyday Warmth',
-    message: 'The simple, ordinary quiet moments together that mean the absolute world to me.'
+    message: 'The quiet moments together that mean the absolute world to me.'
   },
   {
     id: 'h8',
