@@ -35,7 +35,7 @@ export const LETTER_CONTENT = {
 
     "I know the future can feel overwhelming sometimes, and stepping into this next chapter comes with its own weight. But whenever the world feels like it’s moving a little too fast, I want you to remember that you don't have to carry it all on your own. I’m right here, in your corner, through every twist, every turn, and every challenge that comes our way. No matter how much things change around us, my place next to you isn’t going anywhere.",
 
-    "Thank you for being my comfort, my peace, and the person who brings so much genuine warmth into my days. Thank you for your patience with me, for every quiet moment we share, and for letting me love you. You deserve all the happiness, gentleness, and peace this world can offer—not just today, but every single day."
+    "Thank you for being my comfort, my peace, and the person who brings so much genuine warmth into my days. Thank you for your patience with me, for every quiet moment we share, and for letting me love you. You deserve all the happiness, gentleness, and peace this world can offer, not just today, but every single day."
   ],
   closingGreeting: "Happy 17th birthday, my wifey❤️.",
   signature: "Yours always and forever"
