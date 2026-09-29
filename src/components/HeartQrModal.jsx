@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { QrCode, Heart, X, Download, Share2, Check, Sparkles, ExternalLink } from 'lucide-react';
-import { APP_CONFIG } from '../config';
+import { APP_CONFIG, WEBSITE_URL } from '../config';
 
 export default function HeartQrModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [copied, setCopied] = useState(false);
-  const websiteUrl = typeof window !== 'undefined' ? window.location.href : 'https://sshxiol.github.io/birthday-website/';
+  const websiteUrl = typeof window !== 'undefined' && !window.location.origin.includes('localhost')
+    ? window.location.href
+    : (WEBSITE_URL || 'https://abby-birthday-app.vercel.app/');
 
   const handleCopy = () => {
     navigator.clipboard?.writeText(websiteUrl);

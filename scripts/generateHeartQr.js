@@ -7,7 +7,7 @@ import { Resvg } from '@resvg/resvg-js';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const TARGET_URL = 'https://sshxiol.github.io/birthday-website/';
+const TARGET_URL = 'https://abby-birthday-app.vercel.app/';
 
 async function generate() {
   console.log('Generating Heart QR Code for:', TARGET_URL);

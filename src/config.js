@@ -4,7 +4,7 @@
 // =========================================================================
 
 // 🌐 0. WEBSITE DEPLOYMENT URL
-export const WEBSITE_URL = "https://sshxiol.github.io/birthday-website/";
+export const WEBSITE_URL = "https://abby-birthday-app.vercel.app/";
 
 // 🔐 1. SECRET UNLOCK PIN
 // Change this to any 4-digit secret date (e.g. 3009 for September 30th)
