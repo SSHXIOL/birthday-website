@@ -143,13 +143,13 @@ export const HEART_COLLAGE_PHOTOS = [
 // 🏺 8. REASONS I'M GRATEFUL FOR YOU (JAR OF REASONS)
 // Add, remove, or edit any reasons here:
 export const GRATEFUL_REASONS = [
-  "The adorable way your nose crinkles when you laugh genuinely at something silly.",
-  "How you make even the most boring, ordinary days feel like a movie scene.",
-  "Your patience with me whenever I am slow to understand things or clumsy with words.",
-  "The gentle warmth of your hands when you hold mine during chilly walks.",
+  "The adorable way you seek attention when you need it.",
+  "How you make even the most boring, ordinary days feel like a romance manhwa arc.",
+  "You try your best to have patience with me whenever I am slow to understand things or clumsy with words.",
+  "The gentle warmth of your hands when you hold mine.",
   "How passionate you get talking about the little things you care deeply about.",
   "The way you believe in me even during the moments when I struggle to believe in myself.",
-  "Because you are my safest comfort and my calmest harbor when the world gets loud.",
+  "Because you are my safest comfort and my calmest harbor when the world gets is mean.",
   "Every quiet, comfortable silence we share without having to utter a single word.",
   "The fact that you chose me to love, and that I get to celebrate 3 birthdays by your side.",
   "Your beautiful, radiant soul that brings kindness to everyone fortunate enough to know you.",

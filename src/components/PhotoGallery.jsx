@@ -274,8 +274,8 @@ export default function PhotoGallery() {
                   {activeCollagePhoto.label}
                 </span>
               </div>
-              <p className="text-xs text-blush-200/80 font-light text-center">
-                One of countless reasons why you hold my heart completely
+              <p className="text-xs text-blush-200/90 font-light text-center leading-relaxed px-2">
+                {activeCollagePhoto.message || "One of countless reasons why you hold my heart completely"}
               </p>
             </motion.div>
           </>

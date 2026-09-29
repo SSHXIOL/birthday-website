@@ -86,7 +86,7 @@ export default function FloatingAudioWidget() {
               <span className="text-[10px] uppercase font-bold tracking-wider text-pink-300">
                 Playing for Abby
               </span>
-              <span className="text-xs text-white font-medium truncate max-w-[130px]">
+              <span className="text-xs text-white font-medium truncate max-w-[170px]">
                 {APP_CONFIG.musicTitle}
               </span>
             </motion.div>
