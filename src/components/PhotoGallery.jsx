@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Camera, RotateCw, Heart, Sparkles, X, Image as ImageIcon } from 'lucide-react';
+import { Camera, RotateCw, Heart, Sparkles, X, Image as ImageIcon, Film, Volume2, VolumeX } from 'lucide-react';
 import { PHOTO_LIST, HEART_COLLAGE_PHOTOS } from '../config';
 
 export default function PhotoGallery() {
   const [flippedCards, setFlippedCards] = useState({});
   const [activeCollagePhoto, setActiveCollagePhoto] = useState(null);
+  const [videoMuted, setVideoMuted] = useState(true);
 
   const toggleFlip = (id) => {
     if (window.navigator?.vibrate) {
@@ -57,17 +58,48 @@ export default function PhotoGallery() {
 
                   {/* Photo Container */}
                   <div className="w-full h-64 rounded-xl overflow-hidden bg-stone-900 relative group">
-                    <img
-                      src={photo.image}
-                      alt={photo.caption}
-                      onError={(e) => {
-                        // Fallback image if custom image doesn't load
-                        e.target.src = "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80";
-                      }}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      loading="lazy"
-                    />
-                    <div className="absolute bottom-2 right-2 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur-md text-[11px] text-white/90 flex items-center gap-1">
+                    {photo.isVideo ? (
+                      <div className="relative w-full h-full bg-black">
+                        <video
+                          src={photo.video || photo.image}
+                          className="w-full h-full object-cover"
+                          autoPlay
+                          loop
+                          muted={videoMuted}
+                          playsInline
+                        />
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setVideoMuted(!videoMuted);
+                          }}
+                          className="absolute top-2 right-2 p-1.5 rounded-full bg-black/60 backdrop-blur-md text-white/90 hover:bg-black/80 transition-all z-10"
+                          aria-label={videoMuted ? "Unmute video" : "Mute video"}
+                        >
+                          {videoMuted ? (
+                            <VolumeX className="w-3.5 h-3.5 text-white/80" />
+                          ) : (
+                            <Volume2 className="w-3.5 h-3.5 text-pink-400" />
+                          )}
+                        </button>
+                        <div className="absolute top-2 left-2 px-2 py-0.5 rounded-full bg-black/60 backdrop-blur-md text-[10px] text-pink-300 font-medium flex items-center gap-1">
+                          <Film className="w-2.5 h-2.5 text-pink-400" />
+                          <span>Video</span>
+                        </div>
+                      </div>
+                    ) : (
+                      <img
+                        src={photo.image}
+                        alt={photo.caption}
+                        onError={(e) => {
+                          e.target.src = photo.fallbackImage || "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80";
+                        }}
+                        className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                    )}
+                    <div className="absolute bottom-2 right-2 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur-md text-[11px] text-white/90 flex items-center gap-1 z-10">
                       <Sparkles className="w-3 h-3 text-pink-400" />
                       <span>{photo.date}</span>
                     </div>

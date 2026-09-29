@@ -4,8 +4,9 @@
 // =========================================================================
 
 // 🔐 1. SECRET UNLOCK PIN
-// Change this to any 4-digit secret date (e.g. 1204 for Dec 4th)
+// Change this to any 4-digit secret date (e.g. 3009 for September 30th)
 export const PIN_CODE = "3009";
+export const PIN_HINT = "September 30th";
 
 // 🎵 2. BACKGROUND MUSIC
 // You can drop an MP3 file into `public/music/bg-music.mp3` or change this path
@@ -91,7 +92,7 @@ export const PHOTO_LIST = [
     image: "/images/photo1.jpg",
     fallbackImage: "https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80",
     caption: "The day my heart chose you ✨",
-    date: "Dec 2024",
+    date: "September 30th",
     note: "I still remember how your eyes sparkled when you laughed that day. My favorite sight in the whole universe.",
     rotation: "-3deg"
   },
@@ -115,7 +116,9 @@ export const PHOTO_LIST = [
   },
   {
     id: 4,
-    image: "/images/photo4.jpg",
+    image: "/images/video1.mp4",
+    video: "/images/video1.mp4",
+    isVideo: true,
     fallbackImage: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=700&q=80",
     caption: "My prettiest cutie gal 🌷",
     date: "Every Single Day",
@@ -126,15 +129,15 @@ export const PHOTO_LIST = [
 
 // 💖 7. HEART COLLAGE THUMBNAILS
 export const HEART_COLLAGE_PHOTOS = [
-  { id: 'h1', src: 'https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=300&q=80', label: 'Magic' },
-  { id: 'h2', src: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=300&q=80', label: 'Warmth' },
-  { id: 'h3', src: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=300&q=80', label: 'Forever' },
-  { id: 'h4', src: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80', label: 'Pretty' },
-  { id: 'h5', src: 'https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=300&q=80', label: 'Smiles' },
-  { id: 'h6', src: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?auto=format&fit=crop&w=300&q=80', label: 'Sweetheart' },
-  { id: 'h7', src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80', label: 'Love' },
-  { id: 'h8', src: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=300&q=80', label: 'Cherish' },
-  { id: 'h9', src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80', label: 'Joy' },
+  { id: 'h1', src: '/images/photo1.jpg', label: 'Magic' },
+  { id: 'h2', src: '/images/photo2.jpg', label: 'Warmth' },
+  { id: 'h3', src: '/images/photo3.jpg', label: 'Forever' },
+  { id: 'h4', src: '/images/photo1.jpg', label: 'Pretty' },
+  { id: 'h5', src: '/images/photo2.jpg', label: 'Smiles' },
+  { id: 'h6', src: '/images/photo3.jpg', label: 'Sweetheart' },
+  { id: 'h7', src: '/images/photo1.jpg', label: 'Love' },
+  { id: 'h8', src: '/images/photo2.jpg', label: 'Cherish' },
+  { id: 'h9', src: '/images/photo3.jpg', label: 'Joy' },
 ];
 
 // 🏺 8. REASONS I'M GRATEFUL FOR YOU (JAR OF REASONS)

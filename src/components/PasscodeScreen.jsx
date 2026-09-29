@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Lock, Heart, Delete, Sparkles, KeyRound } from 'lucide-react';
-import { PIN_CODE, APP_CONFIG } from '../config';
+import { PIN_CODE, PIN_HINT, APP_CONFIG } from '../config';
 import { audioManager } from '../utils/audioManager';
 
 export default function PasscodeScreen({ onUnlock }) {
@@ -139,7 +139,7 @@ export default function PasscodeScreen({ onUnlock }) {
                 exit={{ opacity: 0 }}
                 className="text-xs font-light text-blush-200 bg-plum-800/80 px-3.5 py-1 rounded-full border border-pink-400/20 shadow-sm"
               >
-                💡 Hint: December 4th ({PIN_CODE})
+                💡 Hint: {PIN_HINT || 'September'}
               </motion.span>
             ) : (
               <span className="text-xs text-rose-200/50 font-light">
